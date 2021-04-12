@@ -1,7 +1,6 @@
 const router = require("express").Router();
 const exercisesRoutes = require("./exercises")
 
-
 const workout_controller = require('../../controllers/workout_controller');
 
 router.route('/')
