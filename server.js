@@ -17,14 +17,14 @@ if (process.env.NODE_ENV === 'production') {
 app.use(routes);
 
 // Connect to Mongo DB
-mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost/workout', {
+mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost/workouts', {
   useNewUrlParser: true,
   useUnifiedTopology: true,
   useCreateIndex: true,
   useFindAndModify: false,
 });
 
-require("./routes/api/index")(app);
+require("./routes/index")(app);
 
 // Starts the server
 app.listen(PORT, function() {
