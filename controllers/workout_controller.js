@@ -1,35 +1,35 @@
-const db = require('../models/workouts');
+const db = require('../models');
 
 module.exports = {
-    findAll: function(req, res) {
+    findAll: (req, res) => {
         db.Workouts
         .find()
-        .then(dbModel => res.json(dbModel))
+        .then(dbWorkout => res.json(dbWorkout))
         .catch(err => res.status(422).json(err));
     },
-    findById: function(req, res) {
+    findById: (req, res) => {
         db.Workouts
         .findById(req.params.id)
-        .then(dbModel => res.json(dbModel))
+        .then(dbWorkout => res.json(dbWorkout))
         .catch(err => res.status(422).json(err));
     },
-    create: function(req, res) {
+    create: (req, res) => {
         db.Workouts
         .create(req.body)
-        .then(dbModel => res.json(dbModel))
+        .then(dbWorkout => res.json(dbWorkout))
         .catch(err => res.status(422).json(err));
     },
-    update: function(req,res) {
+    update: (req, res) => {
         db.Workouts
         .findOneAndUpdate({ _id: req.params.id }, req.body)
-        .then(dbModel => res.json(dbModel))
+        .then(dbWorkout => res.json(dbWorkout))
         .catch(err => res.status(422).json(err));
     },
-    remove: function(req, res) {
+    remove: (req, res) => {
         db.Workouts
         .findById({ _id: req.params.id })
-        .then(dbModel => dbModel.remove())
-        .then(dbModel => res.json(dbModel))
+        .then(dbWorkout => dbWorkout.remove())
+        .then(dbWorkout => res.json(dbWorkout))
         .catch(err => res.status(422).json(err));
     }
 };
