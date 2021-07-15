@@ -1,10 +1,14 @@
 # Workout Tracker
 
 The workout tracker collects and saves workouts using a MongoDB database. 
+Click here to see the project - https://tomarapetty.github.io/WorkoutTracker/
 
 ## User Story
 
-* As a user, I want to be able to view create and track daily workouts. I want to be able to log multiple exercises in a workout on a given day. I should also be able to track the name, type, weight, sets, reps, and duration of exercise. If the exercise is a cardio exercise, I should be able to track my distance traveled.
+* This app helps the user to view create and track daily workouts. 
+* Users can log multiple exercises in a workout on a given day. 
+* Users can also track the name, type, weight, sets, reps, and duration of exercise. 
+* If the exercise is a cardio exercise, the user is able to track the distance traveled.
 
 ## Business Context
 
