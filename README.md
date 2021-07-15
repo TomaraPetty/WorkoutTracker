@@ -1,7 +1,7 @@
 # Workout Tracker
 
 The workout tracker collects and saves workouts using a MongoDB database. 
-Click here to see the project - https://tomarapetty.github.io/WorkoutTracker/
+* Click here to see the project - https://tomarapetty.github.io/WorkoutTracker/
 
 ## User Story
 
